@@ -1,4 +1,4 @@
-module snai.sendmail
+module snai.sendmail.587
 
 go 1.20
 
