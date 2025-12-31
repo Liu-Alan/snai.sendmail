@@ -24,7 +24,7 @@ func SendMail(mail *MailContext) error {
 	em.From = mail.From
 	em.To = mail.To
 	em.Subject = mail.Subject
-	em.Text = mail.Content
+	em.HTML = mail.Content
 	addr := fmt.Sprintf("%s:%d", mail.SMTPServer, mail.Port)
 
 	auth := smtp.PlainAuth("", mail.From, mail.Pwd, mail.SMTPServer)
